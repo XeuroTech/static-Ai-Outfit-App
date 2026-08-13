@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* Exact colors pulled from the AI Outfit Planner mobile app */
+  --color-bg: #0f0f1a;
+  --color-bg-soft: #0b0b12;
+  --color-surface: #1a1a2e;
+  --color-surface-2: #161624;
+  --color-border: #2a2a40;
+
+  --color-indigo: #6366f1;
+  --color-violet: #7c5cfc;
+  --color-purple: #a855f7;
+  --color-magenta: #ec4899;
+  --color-pink: #f472b6;
+  --color-gold: #f59e0b;
+  --color-gold-dark: #b45309;
+  --color-mint: #34d399;
+  --color-mint-2: #10b981;
+
+  --color-ink: #ffffff;
+  --color-ink-soft: #eaeaff;
+  --color-muted: #8e8e9f;
+  --color-muted-2: #6b6b8d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(48% 40% at 15% -8%, rgba(124, 92, 252, 0.22), transparent 60%),
+    radial-gradient(42% 36% at 92% 4%, rgba(236, 72, 153, 0.16), transparent 60%),
+    radial-gradient(46% 40% at 50% 108%, rgba(52, 211, 153, 0.1), transparent 60%);
+  background-attachment: fixed;
+  color: var(--color-ink-soft);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(124, 92, 252, 0.4);
+  color: #fff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #a855f7 0%, #7c5cfc 45%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(100deg, #f59e0b 0%, #b45309 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Dark glass surfaces (matches the app's card treatment: translucent panels over a near-black base) */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-glass {
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.45), 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+.glow-violet {
+  box-shadow: 0 0 60px 10px rgba(124, 92, 252, 0.25);
+}
+
+.glow-gold {
+  box-shadow: 0 0 60px 10px rgba(245, 158, 11, 0.25);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.noise-fade {
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+}
+
+/* Marquee strip */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-fade {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
