@@ -1,8 +1,7 @@
 import Link from 'next/link'
-import { Mail, Phone } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
-const CONTACT_EMAIL = 'hello@xeurotech.com'
-const CONTACT_PHONE = '+92 303 8143000'
+const CONTACT_EMAIL = 'support@outfit-planner.Xeurotech.com'
 
 const LINK_GROUPS = [
   {
@@ -42,8 +41,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Your closet, styled by AI. Generate outfits, plan ahead, and see yourself in every
-              look. A product by XeuroTech.
+              Your closet, styled by AI. Generate outfits, plan ahead, and preview every look
+              with Virtual Try-On. A product by XeuroTech.
             </p>
             <div className="mt-5 space-y-2">
               <a
@@ -52,13 +51,6 @@ export default function Footer() {
               >
                 <Mail className="h-4 w-4 flex-shrink-0" strokeWidth={1.75} />
                 {CONTACT_EMAIL}
-              </a>
-              <a
-                href={`tel:${CONTACT_PHONE.replace(/[^+\d]/g, '')}`}
-                className="flex items-center gap-2 text-sm text-muted transition-colors hover:text-ink"
-              >
-                <Phone className="h-4 w-4 flex-shrink-0" strokeWidth={1.75} />
-                {CONTACT_PHONE}
               </a>
             </div>
           </div>

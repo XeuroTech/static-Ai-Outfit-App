@@ -58,7 +58,7 @@ const FEATURES = [
   {
     icon: ScanFace,
     title: 'Virtual Try-On',
-    desc: 'Generate a realistic AI image of yourself wearing the full outfit before you ever put it on.',
+    desc: 'Generate a realistic AI preview image of the full outfit before you ever put it on.',
     iconColor: 'text-gold-dark',
     iconBg: 'from-gold/30 to-gold/5',
     premium: true,
@@ -97,7 +97,7 @@ export default function Features() {
             One app. Every part of getting dressed.
           </h2>
           <p className="mt-4 text-muted">
-            From cataloguing your closet to seeing yourself in the final look — AI Outfit Planner
+            From cataloguing your closet to previewing the final look — AI Outfit Planner
             handles the whole styling loop. Tap a feature to see it in action.
           </p>
         </motion.div>

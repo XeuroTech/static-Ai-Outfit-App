@@ -1,11 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MessageCircleQuestion } from 'lucide-react'
+import { Mail, MessageCircleQuestion } from 'lucide-react'
 
-const CONTACT_EMAIL = 'hello@xeurotech.com'
-const CONTACT_PHONE_DISPLAY = '+92 303 8143000'
-const CONTACT_PHONE_TEL = '+923038143000'
+const CONTACT_EMAIL = 'support@outfit-planner.Xeurotech.com'
 
 export default function Contact() {
   return (
@@ -44,8 +42,8 @@ export default function Contact() {
             <span className="ml-3 text-[11px] font-medium text-muted-2">Contact XeuroTech</span>
           </div>
 
-          <div className="grid grid-cols-1 divide-y divide-white/5 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-            <a href={`mailto:${CONTACT_EMAIL}`} className="group flex flex-col items-start p-8 transition-colors hover:bg-white/[0.03]">
+          <div className="grid grid-cols-1">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="group flex flex-col items-center p-8 text-center transition-colors hover:bg-white/[0.03]">
               <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet/25 to-violet/5">
                 <Mail className="h-6 w-6 text-violet" strokeWidth={1.75} />
               </div>
@@ -55,19 +53,6 @@ export default function Contact() {
               </p>
               <span className="mt-4 text-sm font-semibold text-violet group-hover:text-ink">
                 {CONTACT_EMAIL}
-              </span>
-            </a>
-
-            <a href={`tel:${CONTACT_PHONE_TEL}`} className="group flex flex-col items-start p-8 transition-colors hover:bg-white/[0.03]">
-              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-mint/25 to-mint/5">
-                <Phone className="h-6 w-6 text-mint" strokeWidth={1.75} />
-              </div>
-              <h3 className="font-display text-lg font-semibold text-ink">Call us</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                For anything time-sensitive during business hours.
-              </p>
-              <span className="mt-4 text-sm font-semibold text-mint group-hover:text-ink">
-                {CONTACT_PHONE_DISPLAY}
               </span>
             </a>
           </div>
