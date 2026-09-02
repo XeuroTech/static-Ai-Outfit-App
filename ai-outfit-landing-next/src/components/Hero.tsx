@@ -148,7 +148,7 @@ export default function Hero() {
           className="glass absolute -right-6 -bottom-6 z-10 hidden max-w-[168px] rounded-2xl px-4 py-3 shadow-glass sm:block lg:-right-10"
         >
           <p className="text-[10px] font-semibold uppercase tracking-wide text-gold">Virtual Try-On</p>
-          <p className="text-xs font-medium text-ink">See yourself in the fit ✨</p>
+          <p className="text-xs font-medium text-ink">Preview the fit, AI-styled ✨</p>
         </motion.div>
       </motion.div>
     </section>

@@ -3,7 +3,7 @@ import { SiApple, SiGoogleplay } from 'react-icons/si'
 // Placeholder store links — swap these for the real App Store / Google Play
 // listing URLs once AI Outfit Planner is actually published.
 export const APP_STORE_URL = 'https://apps.apple.com/app/id0000000000'
-export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.xeurotech.aioutfitplanner'
+export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aioutfitplanner.app'
 
 export function AppStoreBadge({ className = '' }: { className?: string }) {
   return (

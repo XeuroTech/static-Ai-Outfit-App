@@ -1,7 +1,6 @@
 import LegalLayout, { LegalSection } from '../../components/LegalLayout'
 
-const CONTACT_EMAIL = 'hello@xeurotech.com'
-const CONTACT_PHONE = '+92 303 8143000'
+const CONTACT_EMAIL = 'support@outfit-planner.Xeurotech.com'
 
 export default function Terms() {
   return (
@@ -9,7 +8,7 @@ export default function Terms() {
       eyebrow="Terms of Service"
       title="Terms & Conditions"
       intro="These Terms govern your use of AI Outfit Planner, a product of XeuroTech. By creating an account or using the App, you agree to these Terms."
-      lastUpdated="August 2026"
+      lastUpdated="September 2026"
     >
       <LegalSection title="1. Acceptance of these Terms">
         <p>
@@ -25,7 +24,7 @@ export default function Terms() {
           AI Outfit Planner helps you digitize your wardrobe and receive AI-generated outfit
           recommendations, chat with an AI stylist, plan outfits for future events, save your
           favorite looks, track wardrobe analytics, and (as a Premium feature) generate Virtual
-          Try-On images of yourself in a given outfit. Features, availability, and pricing
+          Try-On preview images of a given outfit. Features, availability, and pricing
           described on this website may change over time; we'll update this page when they do.
         </p>
       </LegalSection>
@@ -147,10 +146,6 @@ export default function Terms() {
           Questions about these Terms? Reach us at{' '}
           <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-ink underline decoration-violet/40 underline-offset-2 hover:text-violet">
             {CONTACT_EMAIL}
-          </a>{' '}
-          or{' '}
-          <a href={`tel:${CONTACT_PHONE.replace(/[^+\d]/g, '')}`} className="font-semibold text-ink underline decoration-violet/40 underline-offset-2 hover:text-violet">
-            {CONTACT_PHONE}
           </a>
           .
         </p>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aioutfitplanner.com'),
   title: 'AI Outfit Planner — Your Closet, Styled by AI',
   description:
-    "AI Outfit Planner — your closet, styled by AI. Generate daily outfits, plan looks ahead, and see yourself in every fit with Virtual Try-On.",
+    "AI Outfit Planner — your closet, styled by AI. Generate daily outfits, plan looks ahead, and preview every fit with Virtual Try-On.",
   icons: {
     icon: '/favicon.png',
   },
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen overflow-x-hidden bg-bg text-ink-soft">
+        <div className="min-h-screen bg-bg text-ink-soft">
           <ScrollToTop />
           <Navbar />
           <main>{children}</main>

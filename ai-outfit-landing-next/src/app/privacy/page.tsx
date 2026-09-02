@@ -1,7 +1,6 @@
 import LegalLayout, { LegalSection } from '../../components/LegalLayout'
 
-const CONTACT_EMAIL = 'hello@xeurotech.com'
-const CONTACT_PHONE = '+92 303 8143000'
+const CONTACT_EMAIL = 'support@outfit-planner.Xeurotech.com'
 
 export default function Privacy() {
   return (
@@ -9,7 +8,7 @@ export default function Privacy() {
       eyebrow="Privacy Policy"
       title="Privacy Policy"
       intro="This Privacy Policy explains what information AI Outfit Planner collects, why, and how it's used. AI Outfit Planner is a product of XeuroTech."
-      lastUpdated="August 2026"
+      lastUpdated="September 2026"
     >
       <LegalSection title="1. Who this policy covers">
         <p>
@@ -59,8 +58,8 @@ export default function Privacy() {
           </li>
           <li>
             <span className="font-medium text-ink-soft">Notifications:</span> with your
-            permission, we send local and push notifications for things like planner reminders
-            ahead of a scheduled event. You can disable these at any time in your device settings.
+            permission, we send local notifications for things like planner reminders ahead of a
+            scheduled event. You can disable these at any time in your device settings.
           </li>
         </ul>
       </LegalSection>
@@ -182,10 +181,6 @@ export default function Privacy() {
           Questions about this Privacy Policy or your data? Reach us at{' '}
           <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-ink underline decoration-violet/40 underline-offset-2 hover:text-violet">
             {CONTACT_EMAIL}
-          </a>{' '}
-          or{' '}
-          <a href={`tel:${CONTACT_PHONE.replace(/[^+\d]/g, '')}`} className="font-semibold text-ink underline decoration-violet/40 underline-offset-2 hover:text-violet">
-            {CONTACT_PHONE}
           </a>
           .
         </p>

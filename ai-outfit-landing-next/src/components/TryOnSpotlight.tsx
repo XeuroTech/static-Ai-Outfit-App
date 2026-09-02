@@ -28,10 +28,10 @@ export default function TryOnSpotlight() {
             Premium spotlight
           </div>
           <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            See yourself in the outfit before you wear it.
+            Preview the outfit before you wear it.
           </h2>
           <p className="mt-5 text-muted">
-            Virtual Try-On generates a realistic image of you wearing the exact outfit AI picked
+            Virtual Try-On generates a realistic AI preview image of the exact outfit AI picked
             &mdash; so you never have to imagine how it looks. It&apos;s the difference between an
             outfit suggestion and an outfit preview.
           </p>
